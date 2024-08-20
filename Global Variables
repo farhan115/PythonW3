@@ -1,0 +1,86 @@
+# Global variable declaration
+x = 10
+
+def print_global():
+    # Accessing global variable inside a function
+    print("Value of x inside the function:", x)
+
+print_global()
+print("Value of x outside the function:", x)
+
+
+# Global variable declaration
+counter = 0
+
+def increment_counter():
+    global counter  # Declare that we are using the global variable
+    counter += 1
+    print("Counter inside the function:", counter)
+
+increment_counter()
+increment_counter()
+print("Counter outside the function:", counter)
+
+
+# Global variable declaration
+total = 0
+
+def add_to_total(amount):
+    global total
+    total += amount
+    print(f"Added {amount}, new total: {total}")
+
+def subtract_from_total(amount):
+    global total
+    total -= amount
+    print(f"Subtracted {amount}, new total: {total}")
+
+add_to_total(10)
+subtract_from_total(3)
+print("Final total:", total)
+
+
+# Global variable declaration
+x = 100
+
+def local_scope_example():
+    x = 50  # This is a local variable, not the global one
+    print("Local x inside the function:", x)
+
+local_scope_example()
+print("Global x outside the function:", x)
+
+
+# Global variable declaration
+message = "Hello, World!"
+
+def outer_function():
+    def inner_function():
+        global message
+        message = "Hello, Python!"  # Modifying the global variable
+        print("Message inside inner function:", message)
+
+    inner_function()
+    print("Message inside outer function:", message)
+
+outer_function()
+print("Message outside the function:", message)
+
+
+# Global constant declaration
+PI = 3.14159
+
+def calculate_circumference(radius):
+    return 2 * PI * radius
+
+print("Circumference of a circle with radius 5:", calculate_circumference(5))
+
+
+
+# Instead of using global variables, consider this approach:
+def add_to_total(total, amount):
+    return total + amount
+
+current_total = 0
+current_total = add_to_total(current_total, 10)
+print("Updated total:", current_total)
