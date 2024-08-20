@@ -1,0 +1,65 @@
+# Outputting a single variable
+x = 10
+print(x)
+
+# Outputting multiple variables
+a = 5
+b = 3
+c = a + b
+print(a, b, c)
+
+
+# Combining variables with descriptive text
+name = "Alice"
+age = 25
+print("Name:", name)
+print("Age:", age)
+
+
+# Using string concatenation to combine text with variables
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print("Full name: " + full_name)
+
+
+# Using f-strings for formatted output
+x = 10
+y = 20
+print(f"The value of x is {x} and the value of y is {y}.")
+
+
+# Using the format() method for formatted output
+temperature = 23.5
+humidity = 60
+print("Temperature: {}°C, Humidity: {}%".format(temperature, humidity))
+
+
+# Outputting variables across multiple lines
+x = 50
+y = 100
+print("The value of x is:", x, "\nThe value of y is:", y)
+
+
+# Outputting a list or tuple
+numbers = [1, 2, 3, 4, 5]
+print("The numbers are:", numbers)
+
+
+# Outputting a dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
+print("Person details:", person)
+
+
+# Formatting float output to 2 decimal places
+pi = 3.14159
+print(f"The value of pi rounded to 2 decimal places is: {pi:.2f}")
+
+
+# Using escape characters for special output
+message = "Hello, World!\nWelcome to Python."
+print(message)
+
+# Including a variable within a string that contains special characters
+quote = "Albert Einstein said, \"Imagination is more important than knowledge.\""
+print(quote)
