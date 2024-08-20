@@ -1,0 +1,85 @@
+# Assigning a value to a variable
+a = 5
+b = 10
+print("a =", a)
+print("b =", b)
+
+# Swapping values between two variables
+x = 3
+y = 7
+print("Before Swap: x =", x, ", y =", y)
+
+# Swap
+x, y = y, x
+
+print("After Swap: x =", x, ", y =", y)
+
+# Area of a circle = πr²
+pi = 3.14159
+radius = 5
+area = pi * radius ** 2
+print("Area of the circle:", area)
+
+# Concatenating two strings
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print("Full name:", full_name)
+
+# Performing basic arithmetic operations
+num1 = 15
+num2 = 4
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+
+# Checking if a number is positive or negative
+number = -10
+
+if number > 0:
+    print("The number is positive.")
+else:
+    print("The number is negative.")
+
+  # Converting an integer to a string
+age = 25
+age_str = str(age)
+message = "I am " + age_str + " years old."
+print(message)
+
+  # Using variables to store sum of first 5 natural numbers
+total = 0
+for i in range(1, 6):
+    total += i
+print("Sum of first 5 natural numbers:", total)
+
+  # Working with boolean variables
+is_sunny = True
+is_raining = False
+
+if is_sunny:
+    print("It's a sunny day.")
+else:
+    print("It's not sunny.")
+
+if not is_raining:
+    print("No rain today.")
+
+  # Demonstrating local vs global variables
+global_var = "I am global"
+
+def example_function():
+    local_var = "I am local"
+    print("Inside function:", local_var)
+    print("Inside function:", global_var)
+
+example_function()
+print("Outside function:", global_var)
+# Uncommenting the line below will raise an error
+# print("Outside function:", local_var)
