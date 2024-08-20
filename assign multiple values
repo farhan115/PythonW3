@@ -1,0 +1,49 @@
+# Assigning multiple values to multiple variables
+a, b, c = 1, 2, 3
+
+print("a =", a)
+print("b =", b)
+print("c =", c)
+
+
+# Assigning the same value to multiple variables
+x = y = z = 100
+
+print("x =", x)
+print("y =", y)
+print("z =", z)
+
+
+# Swapping values between two variables using multiple assignment
+x, y = 5, 10
+print("Before Swap: x =", x, ", y =", y)
+
+# Swap values
+x, y = y, x
+print("After Swap: x =", x, ", y =", y)
+
+
+# Unpacking a list or tuple into variables
+numbers = [10, 20, 30]
+a, b, c = numbers
+
+print("a =", a)
+print("b =", b)
+print("c =", c)
+
+
+# Unpacking values but ignoring some of them
+data = (1, 2, 3, 4)
+_, b, _, d = data  # Ignoring the first and third values
+
+print("b =", b)
+print("d =", d)
+
+
+# Unpacking with the * operator to capture remaining values
+numbers = [1, 2, 3, 4, 5]
+a, b, *c = numbers
+
+print("a =", a)
+print("b =", b)
+print("c =", c)  # c will be a list containing [3, 4, 5]
