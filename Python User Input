@@ -1,0 +1,73 @@
+Greeting Program
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+
+Add Two Numbers
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+print("Sum:", a + b)
+
+Check Even or Odd
+x = int(input("Enter a number: "))
+if x % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+Age in Future
+age = int(input("Enter your age: "))
+future = age + 10
+print(f"In 10 years, you will be {future} years old!")
+
+Temperature Converter (Celsius → Fahrenheit)
+c = float(input("Enter temperature in Celsius: "))
+f = (c * 9/5) + 32
+print("Fahrenheit:", f)
+
+Simple Calculator
+num1 = float(input("Enter number: "))
+op = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter number: "))
+
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "*":
+    print(num1 * num2)
+elif op == "/":
+    print(num1 / num2)
+else:
+    print("Invalid operator")
+
+Username and Password Check
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == "admin" and password == "1234":
+    print("Login successful!")
+else:
+    print("Incorrect username or password.")
+
+Largest of Three Numbers
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+c = float(input("Enter third number: "))
+
+print("Largest number is:", max(a, b, c))
+
+Repeat a Word Many Times
+word = input("Enter a word: ")
+count = int(input("How many times to repeat? "))
+
+for i in range(count):
+    print(word)
+
+Guess the Secret Number
+secret = 7
+
+guess = int(input("Guess the number (1-10): "))
+if guess == secret:
+    print("Correct!")
+else:
+    print("Wrong number!")
